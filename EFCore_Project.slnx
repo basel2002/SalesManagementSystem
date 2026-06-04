@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CodeFirst/CodeFirst.csproj" />
+  <Project Path="ProjectForm/ProjectForm.csproj" Id="a0688aba-d607-4c0d-af15-f7e632e9d608" />
+</Solution>
