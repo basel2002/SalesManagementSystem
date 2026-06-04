@@ -24,24 +24,6 @@ A desktop-based enterprise application designed to manage complex sales data, in
 
 The solution follows a two-project architecture to separate concerns between data modeling and user interaction:
 
-```mermaid
-graph TD
-    subgraph "ProjectForm (WinForms UI)"
-        [Form1] --> [DbContextHelper]
-        [Form1] --> [EntityForms]
-    end
-
-    subgraph "CodeFirst (Data Layer)"
-        [MyContext] --> [Models]
-        [MyContext] --> [Migrations]
-    end
-
-    [ProjectForm] -- "References" --> [CodeFirst]
-    [MyContext] -- "EF Core / SQL Provider" --> [ClassicModels_DB]
-
-    style [ClassicModels_DB] stroke-dasharray: 5 5
-```
-
 ### Project Components
 
 **CodeFirst (Data Layer)**
